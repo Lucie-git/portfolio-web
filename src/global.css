@@ -1,22 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Great+Vibes&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   box-sizing: border-box;
-  background-color: #121212;
+  background-color: #aba9a9;
 }
 
 :root {
   --background-color: #121212;
-  --primary-color: #1ABC9C;
-  --secondary-color: #00B4B4;
+  --primary-color: #62e2d5;
+  --secondary-color: #2C666E;
   --text-color: #F5F5F5;
-  --shelf-color: #b27c5c;
-  --book-shadow: rgba(0, 0, 0, 0.2);
-  --font-main: 'Segoe UI', sans-serif;
-  --font-color: rgba(48, 47, 46, 1);
-  --font-family: "Montserrat", sans-serif;
+  --accent-color: #FCEEC0;
+  --header-font: "Montserrat";
 }
 
 html {
@@ -24,12 +21,11 @@ html {
 }
 
 .container {
-  max-width: 20rem;
+  max-width: 80%;
   margin-right: auto;
   margin-left: auto;
-}
-
-h1 {
-  color: var(--secondary-color);
-  font-size: 8rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
