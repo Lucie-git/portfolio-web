@@ -7,7 +7,7 @@
 }
 
 :root {
-  --background-color: #121212;
+  --background-color: #000000;
   --primary-color: #62e2d5;
   --secondary-color: #2C666E;
   --text-color: #F5F5F5;
@@ -17,18 +17,18 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
-  background-image: url(assets/programming.jpg);
+  /* background-image: url(assets/programming.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  background-color: black;
+  background-size: contain; */
+  background-color: var(--background-color);
 }
 
 .container {
   max-width: 80%;
   margin-right: auto;
   margin-left: auto;
-  height: 100vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

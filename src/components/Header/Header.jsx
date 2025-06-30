@@ -10,13 +10,15 @@ export const Header = () => {
           <h1>Lucie Vadkerti</h1>
         </div>
         <nav className="header-nav">
-          <Link to={'/about'}>About</Link>
-          <a className="nav-link" href="O_projektu.html">
+          <Link to={'/about'} className="nav-link">
+            About
+          </Link>
+          <Link to={'/projects'} className="nav-link">
             Projects
-          </a>
-          <a className="nav-link" href="Technologie.html">
+          </Link>
+          <Link to={'/contacts'} className="nav-link">
             Contacts
-          </a>
+          </Link>
         </nav>
       </header>
     </>
