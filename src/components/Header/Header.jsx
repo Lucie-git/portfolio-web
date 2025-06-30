@@ -5,10 +5,7 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="header-title">
-          <img src="assets/logo_my_big.png" alt="" />
-          <h1>Lucie Vadkerti</h1>
-        </div>
+        <img src="assets/logo_my_big.png" alt="Osobní logo" />
         <nav className="header-nav">
           <Link to={'/about'} className="nav-link">
             About
