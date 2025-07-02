@@ -1,3 +1,5 @@
+description.txt
+
 # Ignore the package-lock.json to prevent conflicts when collaborating
 
 package-lock.json
