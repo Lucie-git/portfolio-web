@@ -23,6 +23,11 @@ html {
   background-size: contain;
   background-color: var(--background-color);
   color: #fbfdff;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
 }
 
 .container {
