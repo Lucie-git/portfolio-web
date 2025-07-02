@@ -1,8 +1,9 @@
 .main-container {
-  max-width: 80%;
+  max-width: 90%;
   margin-right: auto;
   margin-left: auto;
-  height: 75vh;
+  height: 100dvh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
