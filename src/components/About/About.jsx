@@ -3,6 +3,7 @@ import './About.css';
 export const About = () => {
   return (
     <>
+      <div className="img-container"></div>
       <h1>About</h1>
       <p>
         I have a background in analytical thinking, attention to detail, and quick adaptation to new
