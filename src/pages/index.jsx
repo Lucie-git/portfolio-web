@@ -1,4 +1,5 @@
-import { render } from '@czechitas/render';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import '../global.css';
 import './index.css';
 import { App } from './app';
@@ -30,4 +31,5 @@ const router = createBrowserRouter([
   },
 ]);
 
-document.querySelector('#root').innerHTML = render(<RouterProvider router={router} />);
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+root.render(<RouterProvider router={router} />);
