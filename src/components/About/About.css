@@ -11,19 +11,21 @@
   top: 60px;
   left: 10px;
   transform: scaleX(-1);
-  box-shadow: 0 1px 0 var(--accent-color);
-
+  box-shadow: 0 2px 2px var(--accent-color);
 }
 
-h1 {
+.about-header {
   position: absolute;
-  top: 200px;
-  right: 30px;
+  top: 170px;
+  right: 20px;
 }
 
-p {
-  position: absolute;
-  top: 45vh;
+.about-description {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
   margin-top: 0;
-  min-width: 90dvh;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  top: 38vh;
 }

@@ -4,8 +4,8 @@ export const About = () => {
   return (
     <>
       <div className="img-container"></div>
-      <h1>About</h1>
-      <p>
+      <h1 className="about-header">About</h1>
+      <p className="about-description">
         I have a background in analytical thinking, attention to detail, and quick adaptation to new
         systems, which I am currently applying in my transition to the IT field. Experience in PPC
         marketing, high-level administration, and customer service has provided me with a solid

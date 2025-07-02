@@ -68,6 +68,7 @@
   color: var(--accent-color);
   font-size: 1.5rem;
   box-shadow: 0 0 10px var(--accent-color);
+  z-index: 1;
 }
 
 li {
