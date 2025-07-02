@@ -26,14 +26,29 @@
   object-fit: contain;
 }
 
-.header-nav {
-  width: 30vw;
+.hamburger {
+  cursor: pointer;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  margin: 20px;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: var(--primary-color);
+  margin: 3px 0;
+  transition: background-color 0.3s;
+}
+
+.header-nav {
+  display: inline-block;
+  width: 30vw;
   color: var(--secondary-color);
   font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .nav-link {
