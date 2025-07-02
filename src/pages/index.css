@@ -1,4 +1,8 @@
 .main-container {
+  background-image: url(/assets/programming.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   max-width: 90%;
   margin-right: auto;
   margin-left: auto;

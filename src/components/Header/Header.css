@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--accent-color);
   justify-content: space-between;
   align-items: center;
   padding-bottom: 8px;
@@ -46,7 +46,7 @@
 }
 
 .hamburger:hover {
-  background-color: var(--secondary-color);
+  box-shadow: 1px 1px 2px var(--accent-color);
   border-radius: 5px;
 }
 
@@ -72,10 +72,13 @@
 
 li {
   list-style-type: none;
+  font-size: 3rem;
 }
 
 .nav-link {
-  text-decoration: none;
+  text-decoration-color: var(--accent-color);
+  font-size: 1.3rem;
+  font-weight: 100;
 }
 
 .nav-link:link,
