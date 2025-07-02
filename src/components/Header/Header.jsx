@@ -6,34 +6,43 @@ export const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   console.log(menuOpened);
 
-  const handleClick = () => {
-    console.log('Tlačítko funguje');
-    setMenuOpened(!menuOpened);
+  const handleLogoClick = () => {
+    setMenuOpened(false);
+    window.location.href = '/';
   };
 
   return (
     <>
       <header className="header">
-        <img src="assets/logo_my_big.png" alt="Osobní logo" />
-        <button onClick={handleClick}>klik</button>
-        <div className="hamburger">
+        <img src="assets/logo_my_small.png" alt="Osobní logo" onClick={handleLogoClick} />
+        <button className="hamburger" onClick={() => setMenuOpened(!menuOpened)}>
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
-        </div>
-        <nav className="header-nav">
-          <ul>
-            <Link to={'/about'} className="nav-link">
-              About
-            </Link>
-            <Link to={'/projects'} className="nav-link">
-              Projects
-            </Link>
-            <Link to={'/contacts'} className="nav-link">
-              Contacts
-            </Link>
-          </ul>
-        </nav>
+        </button>
+
+        {menuOpened && (
+          <nav className="header-nav">
+            <ul>
+              <li>
+                <Link to={'/about'} className="nav-link">
+                  About
+                </Link>
+              </li>
+
+              <li>
+                <Link to={'/projects'} className="nav-link">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to={'/contacts'} className="nav-link">
+                  Contacts
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        )}
       </header>
     </>
   );
