@@ -26,6 +26,12 @@ body {
   min-height: 100dvh;
 }
 
+h1 {
+  font-weight: 300;
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
 .container {
   max-width: 80%;
   margin-right: auto;

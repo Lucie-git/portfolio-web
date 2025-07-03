@@ -1,5 +1,5 @@
-h1,
-h2 {
+h1.main-header,
+h2.main-header {
   font-family: var(--header-font);
   color: var(--primary-color);
   font-weight: 100;
@@ -9,8 +9,8 @@ h2 {
 /* Styly pro tablety na výšku */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  h1,
-  h2 {
+  h1.main-header,
+  h2.main-header {
     font-size: 4rem;
   }
 }
@@ -18,8 +18,8 @@ h2 {
 /* Styly pro desktop */
 @media (min-width: 1025px) {
 
-  h1,
-  h2 {
+  h1.main-header,
+  h2.main-header {
     font-size: 6rem;
   }
 }

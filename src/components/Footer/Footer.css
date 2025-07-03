@@ -14,7 +14,7 @@
   color: var(--secondary-color);
 }
 
-a {
+.footer-link {
   cursor: pointer;
   font-size: 0.8rem;
 }
@@ -40,6 +40,8 @@ a {
     flex-direction: row;
     justify-content: space-around;
     padding: 16px;
+    border-top: 1px solid var(--secondary-color);
+
   }
 
   .footer-title {
@@ -70,6 +72,7 @@ a {
   .footer-link {
     font-size: 1rem;
     font-weight: 100;
+    color: var(--primary-color);
   }
 
 
