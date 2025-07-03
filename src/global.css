@@ -10,7 +10,7 @@
   --background-color: #000000;
   --primary-color: #62e2d5;
   --secondary-color: #2C666E;
-  --text-color: #F5F5F5;
+  --text-color: #FCEEC0;
   --accent-color: #FCEEC0;
   --header-font: "Montserrat";
 }
@@ -33,5 +33,4 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }

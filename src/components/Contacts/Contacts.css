@@ -10,21 +10,27 @@
   text-align: center;
 }
 
-a {
+.contact-links {
+  font-family: var(--header-font);
   text-decoration-color: var(--accent-color);
   font-size: 1.3rem;
   font-weight: 100;
+  text-align: center;
 }
 
-a:link,
-a:visited {
+.contact-links:link,
+.contact-links:visited {
   color: var(--primary-color);
   text-decoration: none;
+  font-weight: 100;
+
 }
 
-a:hover,
-a:active,
-a:focus {
+.contact-links:hover,
+.contact-links:active,
+.contact-links:focus {
   color: var(--accent-color);
   cursor: pointer;
+  font-weight: 100;
+
 }
