@@ -5,7 +5,20 @@ import { useEffect } from 'react';
 
 export const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
-  console.log(menuOpened);
+  const [desktop, setDesktop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      console.log(window.innerWidth);
+      if (window.innerWidth >= 1025) setDesktop(true);
+      else {
+        setDesktop(false);
+      }
+    });
+  }, []);
+
+  console.log('Window width:', window.innerWidth);
+  console.log('Is desktop:', desktop);
 
   const handleLogoClick = () => {
     window.location.href = '/';
@@ -15,8 +28,6 @@ export const Header = () => {
   useEffect(() => {
     setMenuOpened(false);
   }, [location.pathname]);
-
-  console.log('Location pathname:', location.pathname);
 
   return (
     <>
@@ -28,7 +39,7 @@ export const Header = () => {
           <div className="bar"></div>
         </button>
 
-        {menuOpened && (
+        {menuOpened || desktop ? (
           <nav className="header-nav">
             <ul>
               <li>
@@ -49,7 +60,7 @@ export const Header = () => {
               </li>
             </ul>
           </nav>
-        )}
+        ) : null}
       </header>
     </>
   );
