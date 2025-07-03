@@ -31,3 +31,22 @@ a {
   color: var(--accent-color);
   cursor: pointer;
 }
+
+/* Styly pro tablety na výšku */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 16px;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .footer-link {
+    font-size: 1rem;
+  }
+}

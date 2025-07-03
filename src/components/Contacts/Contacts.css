@@ -1,3 +1,8 @@
+.contacts-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .contacts-header {
   text-align: center;
 }
@@ -32,11 +37,22 @@
   color: var(--accent-color);
   cursor: pointer;
   font-weight: 100;
+}
 
+.qr-code {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 20dvw
 }
 
 /* Styly pro tablety na výšku */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .contacts-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
   .contacts {
     font-size: 1.5rem;
     font-weight: 300;
@@ -45,12 +61,14 @@
   .contact-links {
     font-size: 1.3rem;
     font-weight: 100;
+    margin: 24px 0;
   }
 
   .qr-code {
     width: 200px;
     height: 200px;
-    position: relative;
-    left: 13rem;
+    position: absolute;
+    bottom: -7.1dvh;
+    left: 52dvw;
   }
 }
