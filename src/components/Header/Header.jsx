@@ -5,12 +5,12 @@ import { useEffect } from 'react';
 
 export const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
-  const [desktop, setDesktop] = useState(false);
+  const [desktop, setDesktop] = useState(window.innerWidth >= 751);
 
   useEffect(() => {
     window.addEventListener('resize', () => {
       console.log(window.innerWidth);
-      if (window.innerWidth >= 1025) setDesktop(true);
+      if (window.innerWidth >= 751) setDesktop(true);
       else {
         setDesktop(false);
       }
