@@ -1,0 +1,30 @@
+.contacts-header {
+  text-align: center;
+}
+
+.contacts {
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+a {
+  text-decoration-color: var(--accent-color);
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+a:link,
+a:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: var(--accent-color);
+  cursor: pointer;
+}

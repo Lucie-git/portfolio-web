@@ -1,15 +1,22 @@
 import { useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   console.log(menuOpened);
 
   const handleLogoClick = () => {
-    setMenuOpened(false);
     window.location.href = '/';
+    setMenuOpened(false);
   };
+
+  useEffect(() => {
+    setMenuOpened(false);
+  }, [location.pathname]);
+
+  console.log('Location pathname:', location.pathname);
 
   return (
     <>
