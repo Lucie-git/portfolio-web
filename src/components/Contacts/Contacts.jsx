@@ -21,7 +21,7 @@ export const Contacts = () => {
         Lucie-git
       </a>
       <p className="contacts">Bussines card:</p>
-      <img src="/assets/qr-code.png" alt="QR vizitka" />
+      <img className="qr-code" src="/assets/qr-code.png" alt="QR vizitka" />
     </>
   );
 };
