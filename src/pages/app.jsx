@@ -11,17 +11,7 @@ export const App = () => {
   return (
     <>
       <Header />
-      {isMain ? (
-        <div className="main-container">
-          {' '}
-          <Main />
-        </div>
-      ) : (
-        <div className="container">
-          <Outlet />
-        </div>
-      )}
-
+      {isMain ? <Main /> : <Outlet />}
       <Footer />
     </>
   );

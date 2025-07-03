@@ -1,4 +1,13 @@
 .contacts-container {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container {
   display: grid;
   grid-template-columns: 1fr;
 }

@@ -1,3 +1,19 @@
+.main-container {
+  background-image: url(/assets/programming.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100dvh;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 h1.main-header,
 h2.main-header {
   font-family: var(--header-font);
@@ -17,6 +33,11 @@ h2.main-header {
 
 /* Styly pro desktop */
 @media (min-width: 1025px) {
+  .main-container {
+    height: 85dvh;
+    min-height: auto;
+
+  }
 
   h1.main-header,
   h2.main-header {
