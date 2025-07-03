@@ -72,15 +72,17 @@
 
  .nav-link:link,
  .nav-link:visited {
-   color: var(--secondary-color);
+   color: var(--primary-color);
    text-decoration: none;
  }
 
  .nav-link:hover,
  .nav-link:active,
  .nav-link:focus {
-   color: var(--accent-color);
    cursor: pointer;
+   text-shadow: 1px 1px 2px var(--accent-color),
+     1px 1px 2px var(--accent-color),
+     1px 1px 2px var(--accent-color);
  }
 
  /* Styly pro tablety na výšku */
@@ -103,5 +105,47 @@
      font-family: var(--header-font);
      font-size: 2rem;
      font-weight: 300;
+   }
+ }
+
+ /* Styly pro desktop */
+ @media (min-width: 1024px) {
+
+   .header img:hover {
+     filter: drop-shadow(2px 2px 3px var(--accent-color));
+   }
+
+   .hamburger {
+     display: none;
+   }
+
+   .header-nav {
+     position: static;
+     width: 50vw;
+     height: 8vh;
+     box-shadow: none;
+     background: transparent;
+   }
+
+   ul {
+
+     margin: 0;
+     padding: 0;
+     text-align: center;
+   }
+
+   li {
+     list-style-type: none;
+     display: inline-block;
+     text-align: center;
+     margin: 0;
+     padding: 0 4vw;
+     line-height: 1;
+
+   }
+
+   .nav-link {
+     font-size: 1.6rem;
+     font-weight: 100;
    }
  }

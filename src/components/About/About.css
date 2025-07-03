@@ -52,3 +52,25 @@
     top: 50vh;
   }
 }
+
+/* Styly pro desktop */
+@media (min-width: 1025px) {
+  .img-container {
+    top: 117px;
+    left: 162px;
+    height: 250px;
+    width: 250px;
+  }
+
+  .about-header {
+    top: 144px;
+    right: 281px;
+  }
+
+  .about-description {
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+    top: 50vh;
+  }
+}

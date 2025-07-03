@@ -14,3 +14,12 @@ h2 {
     font-size: 4rem;
   }
 }
+
+/* Styly pro desktop */
+@media (min-width: 1025px) {
+
+  h1,
+  h2 {
+    font-size: 6rem;
+  }
+}

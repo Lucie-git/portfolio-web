@@ -34,16 +34,22 @@
 .contact-links:hover,
 .contact-links:active,
 .contact-links:focus {
-  color: var(--accent-color);
+  color: var(--primary-color);
   cursor: pointer;
   font-weight: 100;
+  text-shadow: 1px 1px 2px var(--accent-color),
+    1px 1px 2px var(--accent-color),
+    1px 1px 2px var(--accent-color);
 }
 
 .qr-code {
   width: 150px;
   height: 150px;
   position: relative;
-  left: 20dvw
+  left: 20dvw;
+  filter: drop-shadow(1px 1px 2px var(--accent-color)),
+    1px 1px 2px var(--accent-color),
+    1px 1px 2px var(--accent-color);
 }
 
 /* Styly pro tablety na výšku */
@@ -70,5 +76,32 @@
     position: absolute;
     bottom: -7.1dvh;
     left: 52dvw;
+  }
+}
+
+/* Styly pro desktop */
+@media (min-width: 1024px) {
+  .contacts-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contacts {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .contact-links {
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin: 24px 0;
+  }
+
+  .qr-code {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -7.1dvh;
+    left: 56.5dvw;
   }
 }
